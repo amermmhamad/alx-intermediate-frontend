@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <style>
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl">Image Gallery</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 p-3 mt-4 min-h-screen">
+      <section class="lg:col-span-2 flex">
+        <div class="p-4 bg-red-200 w-1/2">Flexbox Item 1</div>
+        <div class="p-4 bg-red-400 w-1/2">Flexbox Item 2</div>
+      </section>
+      <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <section class="p-6 mt-6">
+      <h2 class="text-2xl font-bold mb-6 text-center">Photo Gallery</h2>
+      <div class="grid grid-cols-3 md:grid-cols-1 gap-6">
+        <div class="bg-gray-300 rounded-md overflow-hidden shadow-lg">
+          <img
+            src="https://picsum.photos/400/300?random=1"
+            alt="Gallery Image 1"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">Beautiful Landscape</h3>
+            <p class="text-sm text-gray-600">A stunning view of nature</p>
+          </div>
+        </div>
+        <div class="bg-gray-300 rounded-md overflow-hidden shadow-lg">
+          <img
+            src="https://picsum.photos/400/300?random=2"
+            alt="Gallery Image 2"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">Urban Architecture</h3>
+            <p class="text-sm text-gray-600">Modern city design</p>
+          </div>
+        </div>
+        <div class="bg-gray-300 rounded-md overflow-hidden shadow-lg">
+          <img
+            src="https://picsum.photos/400/300?random=3"
+            alt="Gallery Image 3"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">Ocean Waves</h3>
+            <p class="text-sm text-gray-600">Peaceful seaside scene</p>
+          </div>
+        </div>
+        <div class="bg-gray-300 rounded-md overflow-hidden shadow-lg">
+          <img
+            src="https://picsum.photos/400/300?random=4"
+            alt="Gallery Image 4"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">Mountain Peak</h3>
+            <p class="text-sm text-gray-600">Majestic mountain view</p>
+          </div>
+        </div>
+        <div class="bg-gray-300 rounded-md overflow-hidden shadow-lg">
+          <img
+            src="https://picsum.photos/400/300?random=5"
+            alt="Gallery Image 5"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">Forest Path</h3>
+            <p class="text-sm text-gray-600">Serene woodland trail</p>
+          </div>
+        </div>
+        <div class="bg-gray-300 rounded-md overflow-hidden shadow-lg">
+          <img
+            src="https://picsum.photos/400/300?random=6"
+            alt="Gallery Image 6"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">City Lights</h3>
+            <p class="text-sm text-gray-600">Vibrant night scene</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+      <p>&copy; 2024 Amer Hamad's Blog</p>
+    </footer>
+  </body>
+</html>
